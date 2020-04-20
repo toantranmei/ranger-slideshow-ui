@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranger Slide-Show By Tran Toan</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <h1>Ranger Slider-Show By Tran Toan</h1>
+        <div class="ui">
+          <!-- START: SLIDESHOW IMAGE -->
+          <article id="slideshow">
+            <ul class="slides">
+              <li class="slide active" data-slide="1">
+                <img src="images/1.jpg" alt="Lao gõng <3 Lao pó | Pic 01">
+              </li>
+              <li class="slide" data-slide="2">
+                <img src="images/2.jpg" alt="Lao gõng <3 Lao pó | Pic 02">
+              </li>
+              <li class="slide" data-slide="3">
+                <img src="images/3.jpg" alt="Lao gõng <3 Lao pó | Pic 03">
+              </li>
+              <li class="slide" data-slide="4">
+                <img src="images/4.jpg" alt="Lao gõng <3 Lao pó | Pic 04">
+              </li>
+              <li class="slide" data-slide="5">
+                <img src="images/5.jpg" alt="Lao gõng <3 Lao pó | Pic 05">
+              </li>
+              <li class="slide" data-slide="6">
+                <img src="images/6.jpg" alt="Lao gõng <3 Lao pó | Pic 06">
+              </li>
+              <li class="slide" data-slide="7">
+                <img src="images/7.jpg" alt="Lao gõng <3 Lao pó | Pic 07">
+              </li>
+              <li class="slide" data-slide="8">
+                <img src="images/8.jpg" alt="Lao gõng <3 Lao pó | Pic 08">
+              </li>
+              <li class="slide" data-slide="9">
+                <img src="images/9.jpg" alt="Lao gõng <3 Lao pó | Pic 09">
+              </li>
+              <li class="slide" data-slide="10">
+                <img src="images/10.jpg" alt="Lao gõng <3 Lao pó | Pic 010">
+              </li>
+            </ul>
+          </article>
+          <!-- END: SLIDESHOW IMAGE -->
+
+          <!-- START: RANGER SLIDER CUSTOM -->
+          <div class="slideContainer">
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="1"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <!-- END: RANGER SLIDER CUSTOM -->
+        </div>
+      </div>
+    </div>
+
+    <script src="handle.js"></script>
+  </body>
+</html>

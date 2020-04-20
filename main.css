@@ -1,0 +1,224 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom my css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 19px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.slides {
+  height: 812px;
+  width: 375px;
+  position: relative;
+}
+
+.slides .slide {
+  position: absolute;
+  display: none;
+  transition: 0.3s all;
+}
+
+.slides .slide.active {
+  display: block;
+}
+
+.slides .slide img {
+  height: 812px;
+  width: 375px;
+  object-fit: contain;
+}
+
+.ui {
+  background-color: #000000;
+  height: 812px;
+  width: 375px;
+  position: relative;
+}
+
+.slideContainer {
+  width: 75%;
+  align-self: center;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    rgb(117, 252, 117) 5%,
+    rgb(214, 214, 214) 0%
+  );
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
